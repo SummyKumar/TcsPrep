@@ -4,11 +4,12 @@ using namespace std;
 int main(){
     int k;
     vector<int>vec;
-    while(cin>>k){
-        if(k==-1){
-            break;
-        }
-        vec.push_back(k);
+    while(true){
+        string s;
+        getline(cin,s);
+        if(cin.empty())break;
+        vec.push_back(stoi(s));
+        
     }
     for(int i=0;i<vec.size();i++){
         cout<<vec[i]<<" "<<endl;
